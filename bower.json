@@ -11,7 +11,9 @@
     "dist/jquery.optiscroll.js",
     "dist/jquery.optiscroll.min.js",
     "dist/optiscroll.js",
-    "dist/optiscroll.min.js"
+    "dist/optiscroll.min.js",
+    "dist/u.optiscroll.js",
+    "dist/u.optiscroll.min.js"
   ],
   "moduleType": [
     "amd",
