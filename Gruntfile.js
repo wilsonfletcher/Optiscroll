@@ -47,6 +47,14 @@ module.exports = exports = function(grunt) {
                     'src/jquery.plugin.js'
                 ],
                 dest: 'dist/jquery.optiscroll.js'
+            },
+            ujs: {
+                options: { banner: "" },
+                src: [
+                    'dist/optiscroll.js',
+                    'src/u.plugin.js'
+                ],
+                dest: 'dist/u.optiscroll.js'
             }
         },
         jshint: {
@@ -73,7 +81,8 @@ module.exports = exports = function(grunt) {
                 },
                 files: {
                     'dist/optiscroll.min.js': ['dist/optiscroll.js'],
-                    'dist/jquery.optiscroll.min.js': ['dist/jquery.optiscroll.js']
+                    'dist/jquery.optiscroll.min.js': ['dist/jquery.optiscroll.js'],
+                    'dist/u.optiscroll.min.js': ['dist/u.optiscroll.js']
                 }
             }
         },
@@ -95,7 +104,7 @@ module.exports = exports = function(grunt) {
                 updateConfigs: ['pkg'],
                 commit: true,
                 commitMessage: 'Release v%VERSION%',
-                commitFiles: ['package.json','bower.json','dist/optiscroll.min.js','dist/optiscroll.js','dist/jquery.optiscroll.min.js','dist/jquery.optiscroll.js'],
+                commitFiles: ['package.json','bower.json','dist/optiscroll.min.js','dist/optiscroll.js','dist/jquery.optiscroll.min.js','dist/jquery.optiscroll.js','dist/u.optiscroll.min.js','dist/u.optiscroll.js'],
                 createTag: true,
                 tagName: 'v%VERSION%',
                 tagMessage: 'Version %VERSION%',
