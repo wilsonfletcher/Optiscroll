@@ -80,7 +80,7 @@ Optiscroll.Instance.prototype = {
     } 
 
     if(G.isTouch && settings.preventParentScroll) {
-      toggleClass(me.element, settings.classPrefix+'-prevent', true);
+      toggleClass(me.element, settings.classPrefix+'__prevent', true);
     }
 
     // calculate scrollbars
@@ -312,7 +312,7 @@ Optiscroll.Instance.prototype = {
     scrollEl.removeAttribute('data-scroll');
 
     // remove classes
-    toggleClass(me.element, me.settings.classPrefix+'-prevent', false);
+    toggleClass(me.element, me.settings.classPrefix+'__prevent', false);
     
     // defer instance removal from global array
     // to not affect checkLoop _invoke
