@@ -527,8 +527,8 @@ var Scrollbar = function (which, instance) {
       scrollbarEl = document.createElement('div');
       trackEl = document.createElement('b');
 
-      scrollbarEl.className = settings.classPrefix+'-'+which;
-      trackEl.className = settings.classPrefix+'-'+which+'track';
+      scrollbarEl.className = settings.classPrefix+'__'+which;
+      trackEl.className = settings.classPrefix+'__'+which+'track';
       scrollbarEl.appendChild(trackEl);
       parentEl.appendChild(scrollbarEl);
 
