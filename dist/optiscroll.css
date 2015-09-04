@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-.optiscroll-content {
+.optiscroll__content {
   position: absolute;
   top: 0;
   left: 0;
@@ -23,8 +23,8 @@
  *  Optiscroll scrollbars base style
  */
 
-.optiscroll-v,
-.optiscroll-h {
+.optiscroll__v,
+.optiscroll__h {
   position: absolute;
   z-index: 2;
   -webkit-backface-visibility: hidden;
@@ -35,16 +35,16 @@
   user-select: none;
 }
 
-.optiscroll-v { right: 0; }
-.optiscroll-h { bottom: 0; }
+.optiscroll__v { right: 0; }
+.optiscroll__h { bottom: 0; }
 
 
 /**************************************
  *  Optiscroll tracks base style
  */
 
-.optiscroll-vtrack,
-.optiscroll-htrack {
+.optiscroll__vtrack,
+.optiscroll__htrack {
   display: block;
   position: absolute;
   opacity: 0;
@@ -63,13 +63,13 @@
 
 
 /* track visible only when enabled */
-.vtrack-on > .optiscroll-v .optiscroll-vtrack { opacity: 1; }
-.htrack-on > .optiscroll-h .optiscroll-htrack { opacity: 1; }
+.vtrack-on > .optiscroll__v .optiscroll__vtrack { opacity: 1; }
+.htrack-on > .optiscroll__h .optiscroll__htrack { opacity: 1; }
 
 
 /* extend draggable area while dragging */
-.optiscroll-vtrack:active:before,
-.optiscroll-htrack:active:before {
+.optiscroll__vtrack:active:before,
+.optiscroll__htrack:active:before {
   content: '';
   position: absolute;
   top: -100px;
@@ -91,7 +91,7 @@
 
 /* Uncomment to prevent VERTICAL iOS page bounce. */
 /*
-.optiscroll-nobounce > .optiscroll-content:before {
+.optiscroll__nobounce > .optiscroll__content:before {
   content: '';
   position: absolute;
   top: 0;
@@ -109,7 +109,7 @@
 
 /* Uncomment to prevent HORIZONTAL iOS page bounce. */
 /*
-.optiscroll-nobounce > .optiscroll-content:before {
+.optiscroll__nobounce > .optiscroll__content:before {
   content: '';
   position: absolute;
   top: 0;
@@ -134,8 +134,8 @@
 /***
  ***  Scrollbars style  ***/
 
-.optiscroll-v,
-.optiscroll-h {
+.optiscroll__v,
+.optiscroll__h {
   background: transparent;
   
   /* Scrollbars are visible only on hover */ 
@@ -147,26 +147,26 @@
   transition: opacity 0.2s ease 0s;
 }
 
-.optiscroll.vtrack-on:hover > .optiscroll-v { opacity: 1; }
-.optiscroll.htrack-on:hover > .optiscroll-h { opacity: 1; }
+.optiscroll.vtrack-on:hover > .optiscroll__v { opacity: 1; }
+.optiscroll.htrack-on:hover > .optiscroll__h { opacity: 1; }
 
-.optiscroll-v {
+.optiscroll__v {
   top: 4px;
   bottom: 4px;
   width: 0;
 }
 
-.optiscroll-h {
+.optiscroll__h {
   left: 4px;
   right: 4px;
   height: 0;
 }
 
 /* Avoid overapping while both scrollbars are enabled */
-.vtrack-on.htrack-on > .optiscroll-v { 
+.vtrack-on.htrack-on > .optiscroll__v { 
   bottom: 8px;
 }
-.vtrack-on.htrack-on > .optiscroll-h { 
+.vtrack-on.htrack-on > .optiscroll__h { 
   right: 8px;
 }
 
@@ -174,25 +174,25 @@
 /***
  ***  Tracks style  ***/
 
-.optiscroll-vtrack,
-.optiscroll-htrack {
+.optiscroll__vtrack,
+.optiscroll__htrack {
   background: rgba(0,0,0,0.3);
   border-radius: 2px;
   box-shadow: 0 0 1px #FFF;
 }
 
-.optiscroll-vtrack {
+.optiscroll__vtrack {
   width: 3px;
   right: 4px;
 }
 
-.optiscroll-htrack {
+.optiscroll__htrack {
   height: 3px;
   bottom: 4px;
 }
 
-.optiscroll-vtrack:active,
-.optiscroll-htrack:active {
+.optiscroll__vtrack:active,
+.optiscroll__htrack:active {
   background: rgba(0,0,0,0.5);
 }
 

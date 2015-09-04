@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-.optiscroll-content {
+.optiscroll__content {
   position: absolute;
   top: 0;
   left: 0;
@@ -23,8 +23,8 @@
  *  Optiscroll scrollbars base style
  */
 
-.optiscroll-v,
-.optiscroll-h {
+.optiscroll__v,
+.optiscroll__h {
   position: absolute;
   z-index: 2;
   -webkit-backface-visibility: hidden;
@@ -35,16 +35,16 @@
   user-select: none;
 }
 
-.optiscroll-v { right: 0; }
-.optiscroll-h { bottom: 0; }
+.optiscroll__v { right: 0; }
+.optiscroll__h { bottom: 0; }
 
 
 /**************************************
  *  Optiscroll tracks base style
  */
 
-.optiscroll-vtrack,
-.optiscroll-htrack {
+.optiscroll__vtrack,
+.optiscroll__htrack {
   display: block;
   position: absolute;
   opacity: 0;
@@ -62,8 +62,8 @@
 
 
 /* track visible only when enabled */
-.vtrack-on > .optiscroll-v .optiscroll-vtrack { opacity: 1; }
-.htrack-on > .optiscroll-h .optiscroll-htrack { opacity: 1; }
+.vtrack-on > .optiscroll__v .optiscroll__vtrack { opacity: 1; }
+.htrack-on > .optiscroll__h .optiscroll__htrack { opacity: 1; }
 
 
 
@@ -74,7 +74,7 @@
 
 /* Uncomment to prevent VERTICAL scrolling. */
 /*
-.optiscroll-prevent > .optiscroll-content:before {
+.optiscroll__prevent > .optiscroll__content:before {
   content: '';
   position: absolute;
   top: 0;
@@ -92,7 +92,7 @@
 
 /* Uncomment to prevent HORIZONTAL scrolling. */
 /*
-.optiscroll-prevent > .optiscroll-content:before {
+.optiscroll__prevent > .optiscroll__content:before {
   content: '';
   position: absolute;
   top: 0;
@@ -118,8 +118,8 @@
  ***  Scrollbars style  ***/
 $scrollbar-size: 0px;
 
-.optiscroll-v,
-.optiscroll-h {
+.optiscroll__v,
+.optiscroll__h {
   background: transparent;
   
   /* Scrollbars are visible only on hover */ 
@@ -131,26 +131,26 @@ $scrollbar-size: 0px;
   transition: opacity 0.2s ease 0s;
 }
 
-.optiscroll.vtrack-on:hover > .optiscroll-v { opacity: 1; }
-.optiscroll.htrack-on:hover > .optiscroll-h { opacity: 1; }
+.optiscroll.vtrack-on:hover > .optiscroll__v { opacity: 1; }
+.optiscroll.htrack-on:hover > .optiscroll__h { opacity: 1; }
 
-.optiscroll-v {
+.optiscroll__v {
   top: 4px;
   bottom: 4px;
   width: $scrollbar-size;
 }
 
-.optiscroll-h {
+.optiscroll__h {
   left: 4px;
   right: 4px;
   height: $scrollbar-size;
 }
 
 /* Avoid overapping while both scrollbars are enabled */
-.vtrack-on.htrack-on > .optiscroll-v { 
+.vtrack-on.htrack-on > .optiscroll__v { 
   bottom: 8px;
 }
-.vtrack-on.htrack-on > .optiscroll-h { 
+.vtrack-on.htrack-on > .optiscroll__h { 
   right: 8px;
 }
 
@@ -160,19 +160,19 @@ $scrollbar-size: 0px;
 $track-size: 3px;
 
 
-.optiscroll-vtrack,
-.optiscroll-htrack {
+.optiscroll__vtrack,
+.optiscroll__htrack {
   background: rgba(0,0,0,0.3);
   border-radius: 2px;
   box-shadow: 0 0 1px #FFF;
 }
 
-.optiscroll-vtrack {
+.optiscroll__vtrack {
   width: $track-size;
   right: 4px;
 }
 
-.optiscroll-htrack {
+.optiscroll__htrack {
   height: $track-size;
   bottom: 4px;
 }
