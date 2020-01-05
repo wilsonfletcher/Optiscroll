@@ -17,7 +17,7 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "eslint": "^3.0.0",
+    "eslint": "^6.8.0",
     "grunt": "^1.0.0",
     "grunt-autoprefixer": "^3.0.3",
     "grunt-bump": "^0.8.0",
